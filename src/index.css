@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.4deg);
+  }
+}
+
+@keyframes gearSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes laserSweep {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-20%) scaleY(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(100%) scaleY(1.2);
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateY(220%) scaleY(0.8);
+  }
+}
+
+@keyframes softBlink {
+  0%, 90%, 100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
+
+.animate-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+.animate-gear-spin {
+  animation: gearSpin 14s linear infinite;
+}
+
+.animate-laser {
+  animation: laserSweep 4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: softBlink 4s ease-in-out infinite;
+}

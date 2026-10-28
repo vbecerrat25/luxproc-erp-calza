@@ -1,0 +1,6 @@
+{
+  "name": "Plataforma en Actualización Continua",
+  "description": "Centro en vivo de actualizaciones, mantenimiento y despliegue continuo de nuevas mejoras para la plataforma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
